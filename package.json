@@ -1,0 +1,14 @@
+{
+  "name": "integracion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "funcion.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.0.1"
+  }
+}
