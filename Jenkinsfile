@@ -1,8 +1,15 @@
-node {
-  stage('Build'){
-    checkout scm
-  }
-  stage('Prepare') {
-    sh "yarn install"
-  }
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'npm install --save-dev jest'
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh './jenkins/script/test.sh'
+            }
+        }
+    }
 }
