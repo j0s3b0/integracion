@@ -1,5 +1,5 @@
 node {
-  stage('Check out') {
+  stage{
     checkout scm
   }
   stage('Prepare') {
