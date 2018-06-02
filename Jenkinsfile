@@ -5,11 +5,12 @@ pipeline {
             steps {
                 sh 'yarn add --dev jest'
             }
-        }
+        
         stage('Inicio de scripts') { 
             steps {
                 sh './jenkins/script/test.sh'
           
  
-    }
+        }
+        }
 }
