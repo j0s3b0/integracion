@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'sh yarn add --dev jest'
+                sh 'yarn add --dev jest'
             }
         }
         stage('Test') { 
