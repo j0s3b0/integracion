@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'yarn install'
+                sh 'npm install --save-dev jest'
             }
         }
         stage('Test') { 
             steps {
-                sh ' yarn test ./jenkins/script'
+                sh ' npm test ./jenkins/script'
             }
         }
     }
