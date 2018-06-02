@@ -1,16 +1,15 @@
 pipeline {
     agent any 
     stages {
-        stage('jest') { 
+        stage('Build') { 
             steps {
-                sh 'yarn add --dev jest'
+                sh 'sh yarn add --dev jest'
             }
-        
-        stage('Inicio de scripts') { 
+        }
+        stage('Test') { 
             steps {
                 sh './jenkins/script/test.sh'
-          
- 
+            }
         }
-        }
+    }
 }
