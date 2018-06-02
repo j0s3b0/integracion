@@ -4,7 +4,8 @@
   "description": "",
   "main": "funcion.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-help": "jest --help"
   },
   "author": "",
   "license": "ISC",
